@@ -153,9 +153,10 @@ function createHillRange(hillAmount, height, color) {
 
 
 // Implementation
-const backgroundGradient = c.createLinearGradient(0, 0, canvas.width, canvas.height)
-backgroundGradient.addColorStop(0, '#171e26')
-backgroundGradient.addColorStop(1, '#3f586b')
+const backgroundGradient = c.createLinearGradient(0, 0, canvas.width, canvas.height);
+backgroundGradient.addColorStop(0, '#003366'); // Dark Blue
+backgroundGradient.addColorStop(0.5, '#66a3ff'); // Light Blue
+backgroundGradient.addColorStop(1, '#b3d9ff'); // Pale Blue
 
 let stars
 let miniStars
@@ -187,14 +188,14 @@ function animate() {
         backgroundStar.draw()
     })
 
-    //if(flag) creatMountainRange(1, canvas.height * 0.7, '#384551')
-    //if(flag) creatMountainRange(2, canvas.height * 0.6, '#2B3843')
-    //if(flag) creatMountainRange(3, canvas.height * 0.4, '#26333E')
+    if(flag) creatMountainRange(1, canvas.height * 0.7, '#384551')
+    if(flag) creatMountainRange(2, canvas.height * 0.6, '#2B3843')
+    if(flag) creatMountainRange(3, canvas.height * 0.4, '#26333E')
 
 // to these lines for green hills
-    if(flag) createHillRange(1, canvas.height * 0.7, '#6B8E23'); // Dark Olive Green
-    if(flag) createHillRange(2, canvas.height * 0.6, '#8FBC8F'); // Dark Sea Green
-    if(flag) createHillRange(3, canvas.height * 0.4, '#556B2F'); // Dark Olive Green
+    //if(flag) createHillRange(1, canvas.height * 0.7, '#6B8E23'); // Dark Olive Green
+    //if(flag) createHillRange(2, canvas.height * 0.6, '#8FBC8F'); // Dark Sea Green
+    //if(flag) createHillRange(3, canvas.height * 0.4, '#556B2F'); // Dark Olive Green
 
     c.fillStyle = '#182028'
     c.fillRect(0, canvas.height - groundHeight, canvas.width, groundHeight)

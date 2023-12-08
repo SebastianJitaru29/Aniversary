@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<meta charset="UTF-8">
+		<title>Timu</title>
+		<link rel="stylesheet" type="text/css" href="./css/format.css">
+	</head>
+
+	<body style="margin:0px">
+		<audio autoplay loop>
+			<source src="music/music.mp3" type="audio/mpeg">
+			Your browser does not support the audio.
+		</audio>
+		<canvas></canvas>
+		<div id="imgTxt">
+			<span id="Txt"></span> <br />
+			<span id="tmp"></span>
+			<img id="img" src="">
+		</div>
+		<div id="heartTxt">
+			<span id="clickMe">Recordes?</span>
+			<div id="heart">
+				<button id="button" onclick="play()"></button>
+			</div>
+		</div>
+		<div id="content">
+			<h2 id="together">Portem junts</h2>
+			<div id="timer">
+				<b id="d"></b> Dies 
+				<b id="h"></b> Hores
+				<b id="m"></b> Minuts
+				<b id="s"></b> Segons
+			</div>
+		</div>
+
+    	<div id = "typeDiv">
+        	<span id="txt1"></span> <br />
+        	<span id="txt2"></span> <br />
+            <span id="txt3"></span>
+    	</div>		
+        
+		<script >
+			var ok = 0;
+			var flag = 1;
+			var myImage = document.getElementById("img");
+			var myTxt = document.getElementById("Txt");
+			var imageArray = ["pic/pic1.png", "pic/pic2.png", "pic/pic3.png", "pic/pic4.png", "pic/pic5.png", "pic/pic6.png", 
+			"pic/pic7.png", "pic/pic8.png"];
+			var imageIndex = 0;
+			var txtArray = ["Madrid amb la Sin cabeza","Mes perdut en la teva mirada que en un examen de Catalá","El teu dia favorit, despres de descobrir el alpinisme com a hobby :)", "Al pedraforca super mona o(≧v≦)o",
+			 "En un dels moments mes lucids ( ͡❛ ‿‿ ͡❛)", "Morint-nos de calor amb els patos ( ͡◡ ‿‿ ͡◡)", "Intercanvi de sweaters ( ͠◡ ‿‿ ͡◡)", "Dia molt maco (✿◠‿◠) "];
+			 var len = imageArray.length;
+			var t = 0;
+		</script>
+		
+		<script type="text/javascript" src="./js/stars.js"></script>
+		<script type="text/javascript" src="./js/typeWriter.js"></script>
+		<script type="text/javascript" src="./js/date.js"></script>
+		<script type="text/javascript" src="./js/playImg.js"></script>
+	</body>
+</html>
